@@ -4,7 +4,10 @@ use Lewis\Presenter\AbstractPresenter;
 
 class PagePresenter extends AbstractPresenter
 {
-    
+    public function uriWildcard()
+    {
+        return $this->uri.'*';    
+    }
     public function prettyUri() {
         return '/' . ltrim($this->uri, '/');
     }

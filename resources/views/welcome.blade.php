@@ -1,6 +1,6 @@
-@extends('layouts.backend')
+@extends('layouts.frontend')
 
-@section('title',"Welcome To Laravel DashBoard")
+@section('title',"Welcome to frontend")
 
 
 @section('content')

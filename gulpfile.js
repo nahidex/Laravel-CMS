@@ -28,7 +28,9 @@ elixir(function(mix) {
     mix.copy('node_modules/simplemde/dist/simplemde.min.css', elixir.config.publicPath + '/css/simplemde.css');
     mix.copy('node_modules/simplemde/dist/simplemde.min.js', elixir.config.publicPath + '/js/simplemde.js');
 
-    mix.sass('backend.scss');
 
     mix.scripts(['jquery.js', 'bootstrap.js', 'moment.js', 'simplemde.js', 'datetimepicker.js']);
+
+    mix.sass('backend.scss');
+    mix.sass('frontend.scss');
 });
