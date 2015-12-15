@@ -2,9 +2,27 @@
 
 namespace App\Presenters;
 use Lewis\Presenter\AbstractPresenter;
+use League\CommonMark\CommonMarkConverter;
 
 class PostPresenter extends AbstractPresenter
 {
+
+	public function __construct($object, CommonMarkConverter $markdown)
+	{
+		$this->markdown = $markdown;
+		parent::__construct($object);
+	}
+
+	public function excerptHtml()
+	{
+		return $this->excerpt ? $this->markdown->convertToHtml($this->excerpt):null;
+	}
+
+	public function bodyHtml()
+	{
+		return $this->body ? $this->markdown->convertToHtml($this->body):null;
+	}
+
 	public function publishedDate()
 	{
 		if ($this->published_at) {
