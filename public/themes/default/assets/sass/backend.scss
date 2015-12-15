@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "simplemde.css";
+@import "datetimepicker";
 
 .vertical-center {
   display: flex;
@@ -12,6 +13,9 @@
 body {
   padding-bottom: 2rem;
 }
-h1   {
-  color: #4f5bff;
+
+
+.excerpt .CodeMirror {
+	height: 150px;
+	min-height:150px;
 }

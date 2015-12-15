@@ -15,5 +15,6 @@ return [
     */
 
     App\Page::class => App\Presenters\PagePresenter::class,
+    App\Post::class => App\Presenters\PostPresenter::class,
 
 ];
