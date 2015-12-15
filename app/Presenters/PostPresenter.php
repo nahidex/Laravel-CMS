@@ -6,7 +6,8 @@ use League\CommonMark\CommonMarkConverter;
 
 class PostPresenter extends AbstractPresenter
 {
-
+	protected $markdown;
+	
 	public function __construct($object, CommonMarkConverter $markdown)
 	{
 		$this->markdown = $markdown;
