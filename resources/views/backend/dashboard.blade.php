@@ -21,6 +21,15 @@
 				@endforeach
 			</ul>
 		</div>
-		<div class="col-md-6"></div>
+		<div class="col-md-6">
+			<ul class="list-group">
+				@foreach($users as $user)
+					<li class="list-group-item">
+						<h4>{{ $user->name }}</h4> 
+						Last Login: {{ $user->last_login_difference }}	
+					</li>
+				@endforeach
+			</ul>
+		</div>
 	</div>
 @endsection
