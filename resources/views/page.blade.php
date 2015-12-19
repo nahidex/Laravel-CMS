@@ -1,8 +1,11 @@
 @extends('layouts.frontend')
 
-@section('title',$page->title)
-
+@section('title', $page->title)
 
 @section('content')
-	{!! $page->content_html !!}
+    @if($page->view)
+        {!! $page->view->render() !!}
+    @else
+        {!! $page->content_html !!}
+    @endif
 @endsection

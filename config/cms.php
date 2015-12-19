@@ -1,11 +1,10 @@
-<?php 
+<?php
 return [
-	'theme'=> [
-		'folder' => 'themes',
-		'active' => 'default'
-
-	],
-	'templates' => [
-		'page' => App\Templates\PageTemplaten::class
-	]
+    'theme' => [
+        'folder' => 'themes',
+        'active' => 'default'
+    ],
+    'templates' => [
+        'home' => App\Templates\HomeTemplate::class
+    ]
 ];
