@@ -11,7 +11,7 @@ class InjectPages
     }
     public function compose(View $view)
     {
-        $pages = $this->pages->all()->toHierarchy();
+        $pages = $this->pages->where('hidden', false)->get()->toHierarchy();
         $view->with('pages', $pages);
     }
 }

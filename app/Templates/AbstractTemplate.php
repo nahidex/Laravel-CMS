@@ -1,5 +1,5 @@
 <?php
-namespace SundaySim\Templates;
+namespace App\Templates;
 use Illuminate\View\View;
 abstract class AbstractTemplate
 {
